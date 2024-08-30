@@ -1,0 +1,45 @@
+<div id="addUsers-popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content popup-form">
+      <button data-close type="button" class="popup__close">X</button>
+      <div class="popup__text popup-users">
+        <div class="popup-users__title">Добавить нового пользователя!</div>
+        <form action="#" class="popup-users__form users-form" id="form-users">
+          <div class="users-form__input-block">
+            <input data-name="true" type="text" id="inp-name" class="users-form__input" placeholder="Введите имя пользователя" name="name" />
+          </div>
+          <div class="users-form__input-block">
+            <input data-require="true" type="text" id="inp-task" class="users-form__input" placeholder="Введите свое первое напоминание!" name="task" />
+          </div>
+          <button class="users-form__btn btn" id="btn-add">Добавить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="true-popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content popup-form">
+      <button data-close type="button" class="popup__close">X</button>
+      <div class="popup__text popup-users">
+        <div class="popup-users__title" id="popup-answer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="delete-popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content question">
+      <button data-close type="button" class="popup__close">X</button>
+      <div class="question__btns">
+        <div class="question__title" id="popup-delete"></div>
+        <div class="question__block">
+          <button class="question__btn btn" id="btnYes" type="button">Да</button>
+          <button class="question__btn btn" id="btnNo" type="button">Нет</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

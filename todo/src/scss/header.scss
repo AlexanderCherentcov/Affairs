@@ -1,0 +1,255 @@
+//====================================================================================================
+
+.header {
+  position: relative;
+  background-image: url("@img/header/header-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  // .header__container
+
+  &__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    z-index: 5;
+    padding: 20px 0 20px 0;
+  }
+
+  // .header__left
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    grid-column: span 4;
+  }
+
+  // .header__top
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+  }
+
+  // .header__bottom
+
+  &__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(8);
+  }
+
+  // .header__action
+
+  &__action {
+    display: flex;
+    gap: rem(20);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 8;
+  }
+}
+.top-header {
+  // .top-header__logo
+
+  &__logo {
+  }
+
+  // .top-header__users
+
+  &__users {
+    display: flex;
+    flex-direction: row;
+    gap: rem(8);
+  }
+}
+.logo {
+  // .logo__link
+
+  &__link {
+  }
+
+  // .logo__img
+
+  &__img {
+  }
+}
+.users {
+  // .users__menu
+
+  &__menu {
+    position: relative;
+  }
+
+  // .users__add
+
+  &__add {
+  }
+}
+.menu {
+  // .menu__name
+
+  &__name {
+  }
+
+  // .menu__block
+
+  &__block {
+    position: absolute;
+    top: rem(20);
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: rem(5);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    visibility: hidden;
+    background-image: url("@img/header/menu-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition:
+      opacity 0.3s ease-in-out,
+      transform 0.3s ease-in-out,
+      visibility 0.3s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 10px;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  // .menu__item
+
+  &__item {
+    position: relative;
+    z-index: 10;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--color-hover);
+    }
+
+    &:focus-visible {
+      color: var(--color-focus);
+    }
+
+    &:active {
+      color: var(--color-active);
+    }
+  }
+}
+.btn {
+}
+.bottom-header {
+  // .bottom-header__time
+
+  span {
+    font-size: rem(17);
+    font-weight: 600;
+  }
+
+  &__time {
+    font-weight: 600;
+    font-size: rem(17);
+  }
+}
+.action-header {
+  // .action-header__task
+
+  &__task,
+  &__done {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(10);
+    font-size: rem(20);
+    font-weight: 600;
+    padding: rem(15);
+    background-color: rgb(0, 0, 255, 0.4);
+    border-radius: rem(20);
+  }
+}
+.task {
+  // .task__name
+
+  &__name {
+    color: gold;
+  }
+
+  // .task__counter
+
+  &__counter {
+    color: gold;
+  }
+}
+.done {
+  // .done__name
+
+  &__name {
+    color: #32cd32;
+  }
+
+  // .done__counter
+
+  &__counter {
+    color: #32cd32;
+  }
+}
+
+.menu_active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-1px);
+}
+
+.link-nav {
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition:
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  &:hover {
+    color: var(--color-hover);
+  }
+
+  &:focus-visible {
+    background-color: var(--color-focus);
+    color: white;
+  }
+
+  &:active:not(:focus-visible) {
+    color: var(--color-active);
+  }
+}
+
+.api__btn {
+  min-width: 150px;
+}
