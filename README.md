@@ -18,7 +18,7 @@ ToDo is a simple and convenient task management application. It allows users to 
 
 ## Installation and Setup
 
-To install and run the project locally, follow these steps:
+This project was built using Gulp version 4.0.2. To install and run the project locally, follow these steps:
 
 1. To install and run the project locally, follow these steps:
    ```bash
