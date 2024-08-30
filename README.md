@@ -1,33 +1,34 @@
 # ToDo
 
-ToDo — это простое и удобное приложение для управления списком задач. Оно позволяет пользователям добавлять, удалять и отмечать задачи как выполненные. Приложение поддерживает создание нескольких пользователей, что позволяет каждому вести свой собственный список дел.
+ToDo is a simple and convenient task management application. It allows users to add, delete, and mark tasks as completed. The application supports creating multiple users, allowing each user to manage their own task list.
 
-## Содержание
-- [Особенности](#особенности)
-- [Установка и Запуск](#установка-и-запуск)
-- [Использование](#использование)
-- [Скриншоты](#скриншоты)
+## Table of Contents
+- [Features](#features)
+- [Installation and Setup](#installation-and-setup)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Note](#Note)
 
-## Особенности
+## Features
 
-- **Добавление задач:** Создавайте новые задачи с описанием.
-- **Удаление задач:** Удаляйте ненужные или выполненные задачи.
-- **Отметка как выполненное:** Отмечайте задачи как выполненные для отслеживания прогресса.
-- **Поддержка пользователей:** Создавайте и управляйте несколькими пользователями.
+- **Task Addition:** Create new tasks with descriptions.
+- **Task Deletion:** Remove unnecessary or completed tasks.
+- **Mark as Completed:** Mark tasks as completed to track progress.
+- **User Support:** Create and manage multiple users.
 
-## Установка и Запуск
+## Installation and Setup
 
 Чтобы установить и запустить проект локально, выполните следующие шаги:
 
-1. Клонируйте репозиторий:
+1. To install and run the project locally, follow these steps:
    ```bash
    git clone https://github.com/AlexanderCherentcov/Affairs.git
 
-2. Перейдите в директорию проекта:
+2. Navigate to the project directory:
    ```bash
    cd Affairs
 
-3. Перейдите в директорию todo-server и запустите сервер:
+3. Navigate to the todo-server directory and start the server:
    ```bash
    cd todo-server
    node index
@@ -36,19 +37,23 @@ ToDo — это простое и удобное приложение для у�
    ```bash
    cd Affairs
 
-5. Перейдите в директорию todo, установите все зависимости и запустите сборку:
+5. In a new terminal, go to the project directory:
    ```bash
    cd todo
    npm install
    npm run dev
 
-После выполнения этих шагов приложение будет доступно для использования.
+Once you complete these steps, the application will be available for use.
 
-Использование
-Приложение предоставляет интерфейс для управления списком дел. Вы можете создать нового пользователя, добавить задачи, отмечать их как выполненные или удалять по мере необходимости.
+## Usage
 
-Скриншоты
-Главный экран приложения ToDo.
-![Главный экран](./screenshots/ToDo.jpg)
+The application provides an interface for managing a to-do list. You can create a new user, add tasks, mark them as completed or delete them as needed.
 
+## Screenshots
 
+Main screen of the ToDo application
+![Main screen](./screenshots/ToDo.jpg)
+
+## Note
+
+I didn't write todo-server myself, I just used it for my project. The backend was developed by Skillbox.
