@@ -18,7 +18,7 @@ ToDo is a simple and convenient task management application. It allows users to 
 
 ## Installation and Setup
 
-Чтобы установить и запустить проект локально, выполните следующие шаги:
+To install and run the project locally, follow these steps:
 
 1. To install and run the project locally, follow these steps:
    ```bash
@@ -33,7 +33,7 @@ ToDo is a simple and convenient task management application. It allows users to 
    cd todo-server
    node index
  
-4. В новом терминале перейдите в директорию проекта:
+4. In a new terminal, go to the project directory:
    ```bash
    cd Affairs
 
